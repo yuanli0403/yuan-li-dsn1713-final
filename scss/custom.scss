@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+}
+
+
+$primary: #3B5998;
+$secondary: #DFEBF1;
+$success: #B70311;
+$info: #EFD800;
+
+
+$navbar-light-color: $secondary;
+$navbar-light-hover-color: $success;
+$navbar-light-active-color: $secondary;
+
+.search-input {
+  background-image: url("../images/search-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 24px;
+  padding-left: 36px;
+}
+
+.navbar-toggler {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("../images/hamburger-icon.svg") !important;
+}
+
+.navbar-brand {
+  font-family: "Roboto Slab", serif;
+}
+
+$btn-border-radius: 20px;
+
+$font-family-sans-serif: "Roboto", sans-serif;
+$headings-font-family: "Roboto Slab", serif;
+
+#hero {
+  background-image: url(../images/home-hero.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  min-height: 95vh;
+}
+
+.hero-divider {
+  width: 50vh;
+  height: 1px;
+  background-color: $secondary;
+  opacity: 0.5;
+}
+
+$h1-font-size: 1rem * 4;
+$h2-font-size: 1rem * 2;
+$h3-font-size: 1rem * 1.75;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+h2 {
+  color: $primary;
+}
